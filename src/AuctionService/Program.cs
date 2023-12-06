@@ -48,6 +48,8 @@ builder.Services.AddDbContext<AuctionDbContext>(opt =>
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
+builder.Services.AddScoped<IAuctionRepository, AuctionRepository>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -66,3 +68,5 @@ catch (Exception e)
 }
 
 app.Run();
+
+public partial class Program { }
