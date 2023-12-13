@@ -1,7 +1,7 @@
 import React from "react"
 import CountdownTimer from "./CountdownTimer"
 import CarImage from "./CarImage"
-import { Auction } from "@/types/indes"
+import { Auction } from "@/types"
 import Link from "next/link"
 
 type Props = {
