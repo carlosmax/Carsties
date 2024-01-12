@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .input-custom {
+    @apply flex-grow pl-5 bg-transparent border-transparent focus:outline-none focus:border-transparent focus:ring-0;
+  }
+}
+
 .react-datepicker-wrapper {
   width: 100%;
 }
